@@ -4,7 +4,7 @@ class Song < ActiveRecord::Base
 
   def get_genre_name
     Genre.pluck(:name)[0]
-    
+
   end
 
   def drake_made_this
