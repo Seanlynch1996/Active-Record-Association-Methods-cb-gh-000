@@ -3,7 +3,8 @@ class Song < ActiveRecord::Base
   belongs_to :genre
 
   def get_genre_name
-    Genre.pluck(:name)[0]
+    #Genre.pluck(:name)[0]
+    Song.genre
   end
 
   def drake_made_this
