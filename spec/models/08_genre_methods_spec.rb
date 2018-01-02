@@ -4,7 +4,6 @@ describe 'Genre Methods' do
     @genre.artists << Artist.create(name: "MJ")
     @genre.artists << Artist.create(name: "Adele")
     @genre.artists << Artist.create(name: "James Brown")
-    Artist.destroy(2)
     @genre.save
   end
 
@@ -17,7 +16,7 @@ describe 'Genre Methods' do
   end
 
   it '#artist_count' do
-    expect(@genre.artist_count).to eq(2)
+    expect(@genre.artist_count).to eq(3)
   end
 
   describe '#all_artist_names' do
