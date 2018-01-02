@@ -4,7 +4,7 @@ describe 'Genre Methods' do
     @genre.artists << Artist.create(name: "MJ")
     @genre.artists << Artist.create(name: "Adele")
     @genre.artists << Artist.create(name: "James Brown")
-    Artist.destroy(2)
+    
     @genre.save
   end
 
