@@ -17,7 +17,7 @@ describe 'Genre Methods' do
   end
 
   it '#artist_count' do
-    expect(@genre.artist_count).to eq(3)
+    expect(@genre.artist_count).to eq(2)
   end
 
   describe '#all_artist_names' do
